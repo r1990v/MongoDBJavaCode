@@ -12,7 +12,7 @@ public class GetMongoDbConnectionCount {
 	@SuppressWarnings("rawtypes")
 	public static void main(String[] args) {
 
-//Get logger related to MongoDB driver.
+		//Get logger related to MongoDB driver.
 		Logger mongoLogger = Logger.getLogger("org.mongodb.driver");
 		// Update the logging level to get rid of unwanted information, mongoLogger
 		// could be commented to get
@@ -33,6 +33,7 @@ public class GetMongoDbConnectionCount {
 			available = available + 2;
 
 			try {
+				//Print current and available number of connections existing on mongoDB.
 				System.out.println("Current: " + current.toString() + ", Available: " + available.toString());
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
