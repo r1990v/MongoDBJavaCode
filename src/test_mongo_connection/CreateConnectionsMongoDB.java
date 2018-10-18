@@ -1,4 +1,4 @@
-package test.mongo;
+package test_mongo_connection;
 
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoDatabase;

@@ -1,4 +1,4 @@
-package test.mongo;
+package test_mongo_connection;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -17,7 +17,8 @@ public class CountDocumentsInAMongoCollection {
 
 		// Get logger related to MongoDB driver.
 		Logger mongoLogger = Logger.getLogger("org.mongodb.driver");
-		// Update the logging level to get rid of unwanted information.
+		// Update the logging level to get rid of unwanted information, mongoLogger could be commented to get
+		// detailed information related to any of the issues.
 		mongoLogger.setLevel(Level.SEVERE);
 
 		// Create a client which connects to mongoDB database by providing server_ip and
